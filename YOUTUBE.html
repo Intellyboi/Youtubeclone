@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="YBLP.jpg">
+
+    <style>
+      .Header{
+      
+        display:flex;
+        flex-direction: row;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        background-color: white;
+        border-bottom-width:2px;
+        border-bottom-style:solid;
+        border-bottom-color:rgb(193, 192, 192);
+        z-index:2;
+      }
+      .leftsection{
+        display:inline-block;
+        
+      
+      }
+      
+      .middlesection{
+        background-color: white;
+        display:flex;
+        
+        justify-content: space-between;
+        
+        
+  
+
+      }
+      .rightsection{
+        
+        
+        width:200 px;
+        display:inline-block;
+        flex-shrink:0;
+      }
+      .Hamburgermenu{
+        height: 40px;
+        width:40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        margin-top: 29px;
+      }
+      .Hamburgermenu1{
+        height: 45px;
+        width:45px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        margin-top: 29px;
+        border-radius:22.5px;
+      }
+
+      
+      .YBLOGO1{
+        display:inline-block;
+        border-radius: 20px;
+        height:80px;
+        width:120px;
+        margin-top: 10px;
+        margin-left:10px;
+      }
+      .Taskbar{
+        display:inline-block;
+        height:40px;
+        width:40px;
+        margin-top:29px;
+        margin-left:24px;
+      }
+    
+      .thumbnail{
+        display:inline-block;
+        width:278px;
+        height:156px;
+        
+        object-fit:contain;
+        position:relative;
+      }
+      .thumbnail:hover{
+        
+        cursor:pointer;
+        object-fit:cover;
+      }
+      .Searchbar{
+        
+        display:flex;
+        margin-top: 29px;
+        margin-bottom:0px;
+        margin-left: 100px;
+        margin-right:0px;
+        font-size: 20px;
+        font-family:'Roboto', sans-serif;
+        height: 40px;
+        width: 500px;
+        
+        padding-left:12px;
+        border-radius: 2px;
+        box-shadow: inset 1px 2px 3px
+        rgba(0,0,0,0.1);
+        border-color: rgb(193, 192, 192);
+        border-width: 1px;
+        
+      }
+      .Searchbar::placeholder{
+        padding-left:16px;
+      }
+      .search{
+      
+        margin-top: 29px;
+        height:44px;
+        width:40px;
+        cursor:pointer;
+        margin-right:20px;
+        background-color: whitesmoke;
+        border-width: 1px;
+        border-color: rgb(193, 192, 192);
+        border-radius: 2px;
+        margin-left: -1px;
+      }
+      .search:hover{
+        cursor:pointer;
+      }
+      .searchimg{
+        align-items: center;
+        height:25px;
+        width:25px;
+        
+      }
+      .voice{
+        margin-top: 29px;
+        height:44px;
+        width:40px;
+        cursor:pointer;
+        margin-right:100px;
+        background-color: white;
+        border-width: 1px;
+    
+        border-color: rgb(193, 192, 192);
+        border-radius: 22px;
+      }
+      .voice:hover{
+        cursor:pointer;
+      }
+      .voiceimg{
+        align-items: center;
+        height:25px;
+        width:25px;
+        
+        
+      }
+      .Box{
+        display:inline-block;
+        margin-left:1px;
+        margin-right:1px;
+        height:300px;
+        width:285px;
+      
+        
+        
+       }
+       .Desc{
+        font-family:'Roboto', sans-serif;
+        display:inline-block;
+        font-weight: 600;
+        color:black;
+        font-size: 15px;
+        width:237px;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-left:0px;
+       }
+       .Channel{
+        font-family:'Roboto', sans-serif;
+        display:block;
+        margin-left: 40px;
+        color:rgb(37, 33, 33);
+        font-size:12px;
+        margin-right: 50px;
+        margin-left: 45px;
+        margin-top:0px;
+        
+       }
+       .Viewtime{
+        font-family:'Roboto', sans-serif;
+        display:block;
+        margin-left: opx;
+        color:rgb(37, 33, 33);
+        font-size:12px;
+        margin-right: 30px;
+        margin-top:10px;
+        margin-left:45px;
+
+       }
+       .CPP{
+        display:inline-block;
+        height:36px;
+        width:36px;
+        border-radius: 100px;
+        object-fit: contain;
+        object-position: center;
+        margin-right: 6px;
+       }
+       .sidebarimg{
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:40px;
+        padding-bottom:40px;
+        width:40px;
+        height:40px;
+        display:block;
+        
+
+       }
+
+    </style>
+  </head>
+  <div class="Header">
+    <img class="Taskbar" src="tb.jpg">
+    <div class="leftsection">
+      
+  <img class="YBLOGO1" src="YoutubeL.jpg"/>
+  
+</div>
+
+<div class="middlesection">
+  <input class="Searchbar" type="text" placeholder="Search">
+  <button class="search"><img class="searchimg" src="Search.jpg"/></button>
+  <button class="voice"><img class="voiceimg" src="voice.jpg"/></button>
+</div>
+<div class="rightsection">
+<img class="Hamburgermenu" src="Vidic.jpg"/>
+<img class="Hamburgermenu" src="ya.jpg"/>
+<img class="Hamburgermenu" src="bell.jpg"/>
+<img class="Hamburgermenu1" src="College Photo.jpg"/>
+
+</div>
+</div>
+
+
+<div style="
+top:90px;
+width:80px;
+bottom: 0px;
+left:0px;
+position:fixed;
+background-color: white;
+
+">
+
+<img class="sidebarimg" src="HII.jpg"/>
+<img class="sidebarimg" src="Ei.jpg"/>
+<img class="sidebarimg" src="SI.jpg"/>
+<img class="sidebarimg" src="Li.jpg"/>
+</div>
+  <body style="
+  padding-top: 100px;
+  padding-left: 85px;
+  background-color: rgb(249, 245, 245);
+  z-index: 1;
+  ">
+  <div class="Box">
+    <a href="https://www.youtube.com/watch?v=ltD4TVN9wAY">
+   <img class="thumbnail" src="MKBH.jpg"/>
+  </a>
+  <a href="https://www.youtube.com/c/mkbhd">
+  <img class="CPP" src="MBCPP.jpg"/>
+</a>
+  
+
+  <p class="Desc">World's First Intel ARC PC Build! (A770)</p>
+  
+  <p class="Channel">Marques Brownlee</p>
+  <p class="Viewtime">1.9M views . 4 days ago </p>
+
+</div>
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=JSaIV-be75o">
+  <img class="thumbnail" src="Pandian.jpg"/>
+</a>
+<a href="https://www.youtube.com/c/VijayTelevision">
+  <img class="CPP" src="VIJAYCPP.jpg"/>
+</a>
+  <p class="Desc"> Pandian Stores|20th-24th September Promo</p>
+  
+  <p class="Channel">Vijay TV</p>
+  <p class="Viewtime">8k views . 16 hours ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=-FuJ5mOV6Vg">
+  <img class="thumbnail" src="BRIGHTSIDE.jpg"/>
+</a>
+<a href="https://www.youtube.com/c/BRIGHTSIDEOFFICIAL">
+  <img class="CPP" src="BRIGHTCPP.jpg"/>
+</a>
+  <p class="Desc"> Survivor Says Something New About The Bermuda Triangle</p>
+  
+  <p class="Channel">BRIGHT SIDE</p>
+  <p class="Viewtime">7.8M views . 9 days ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=QSiRAMlQLD8">
+  <img class="thumbnail" src="MEDIAMASONS.jpg"/>
+</a>
+<a href="https://www.youtube.com/c/MediaMasonsMM">
+  <img class="CPP" src="MEDIACPP.jpg"/>
+</a>
+  <p class="Desc">Tick Talk with Sakthi Ft. Santhosh and Sunita </p>
+  
+  <p class="Channel">Media Masons</p>
+  <p class="Viewtime">134 views.1 hour ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=Y6S0Ca97uyY">
+      <img class="thumbnail" src="HDI.jpg"/>
+    </a>
+ <a href="https://www.youtube.com/channel/UCxPX-aIKxIZFyFbgryRwneA">
+  <img class="CPP" src="HDICPP.jpg"/>
+</a>
+  <p class="Desc">(7x10 Meters) Modern House Design|4 Bedrooms Tour </p>
+  
+  <p class="Channel">House Design Idea</p>
+  <p class="Viewtime">1.1k views.4 hours ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="">
+    <a href="https://www.youtube.com/watch?v=UmdYGpptGzY">
+  <img class="thumbnail" src="SAREGAMA.jpg"/>
+</a>
+<a href="https://www.youtube.com/c/SaregamaTamil">
+  <img class="CPP" src="SAREGAMACPP.jpg"/>
+</a>
+  <p class="Desc">Rendu Raaja-Lyric Video| Naane Varuvean</p>
+  
+  <p class="Channel">Saregama Tamil</p>
+  <p class="Viewtime">4.2M views.1 year ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=AsPOlwMSEX4">
+  <img class="thumbnail" src="ADI.jpg"/>
+  </a>
+  <a href="https://www.youtube.com/c/adityamusic">
+  <img class="CPP" src="ADICPP.jpg"/>
+</a>
+  <p class="Desc">Prince – Jessica Lyric Video (Tamil)| Sivakarthikeyan</p>
+  
+  <p class="Channel">Aditya Music Tamil</p>
+  <p class="Viewtime">11M views.3 days ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=5TfFVWWPw4s">
+  <img class="thumbnail" src="MIC.jpg"/>
+</a>
+<a href="https://www.youtube.com/c/MicSet_official">
+  <img class="CPP" src="MICCPP.jpg"/>
+</a>
+  <p class="Desc">Classroom Sothanaigal 3 | Micset</p>
+  
+  <p class="Channel">Micset</p>
+  <p class="Viewtime">8.6k views . 30 mins ago </p>
+  
+</div>
+
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=dA_xgc9H6jA">
+  <img class="thumbnail" src="MG.jpg"/></a>
+  <a href="https://www.youtube.com/c/madangowri">
+  <img class="CPP" src="MGCPP.jpg"/>
+</a>
+  <p class="Desc">India’s Big Secrets | Tamil | Madan Gowri</p>
+  
+  <p class="Channel">Madan Gowri</p>
+  <p class="Viewtime">1.7M views . 4 days ago </p>
+  
+</div>
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=VR8Rx2X8YgQ">
+  <img class="thumbnail" src="RB.jpg"/>
+</a>
+<a href="https://www.youtube.com/c/RowdyBabyTamil">
+  <img class="CPP" src="RBCPP.jpg"/>
+</a>
+  <p class="Desc">Amma Thatha VS Appa Thatha||Chutti Kuzhandhai</p>
+  
+  <p class="Channel">Rowdy Baby</p>
+  <p class="Viewtime">19.4k views.47 mins ago </p>
+  
+</div>
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=vPlXMktn5NU">
+  <img class="thumbnail" src="HC.jpg"/>
+</a>
+<a href="https://www.youtube.com/user/HardwareCanucks">
+  <img class="CPP" src="HCCPP.jpg"/>
+</a>
+  <p class="Desc">Cool Keyboards You've Never Heard Of-2022 Edition! </p>
+  
+  <p class="Channel">Hardware Canucks</p>
+  <p class="Viewtime">89.5k views.1 day ago </p>
+  
+</div>
+<div class="Box">
+  <a href="https://www.youtube.com/watch?v=AMOgebbfmVw">
+  <img class="thumbnail" src="IV.jpg"/>
+</a>
+<a href="https://www.youtube.com/user/smashingirfan">
+  <img class="CPP" src="IVCPP.jpg"/>
+</a>
+  <p class="Desc">Forest Bungalow, 2 Lakh Per Day|SR Jungle Resort</p>
+  
+  <p class="Channel">Irfan's View</p>
+  <p class="Viewtime">3.4M views.9 hours ago </p>
+  
+</div>
+
+
+</body>
+</html>
